@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chico Cabeleireiro</title>
+  <meta name="description" content="A barbearia premium da sua cidade. Cortes modernos, barba impecável e uma experiência que você nunca vai esquecer. Agende agora e ganhe desconto especial!" />
+  <link rel="shortcut icon" href="tesouras.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <span> BEM VINDO!</span>
+    <span>📱 (99) 99 98470-0598</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-icon"><i class="fas fa-cut"></i></div>
+        <span class="logo-text">Chico<span> Cabeleireiro</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#agendar" class="nav-cta">Agendar Agora</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+    <a href="#sobre" onclick="closeMobile()">Sobre</a>
+    <a href="#servicos" onclick="closeMobile()">Serviços</a>
+    <a href="#galeria" onclick="closeMobile()">Galeria</a>
+    <a href="#depoimentos" onclick="closeMobile()">Depoimentos</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
+    <a href="#agendar" onclick="closeMobile()" style="color: var(--gold);">Agendar Agora</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-crown"></i>
+          A Barbearia Premium da Sua Cidade
+        </div>
+        <h1 class="hero-title">
+          Você<br>
+          <span class="highlight">Com Estilo</span>
+        </h1>
+        <p class="hero-subtitle">
+          Cortes e barba impecável. Uma experiência de cuidado masculino que vai além do esperado.
+        </p>
+        <div class="hero-actions">
+          <a href="#agendar" class="btn-primary">
+            <i class="fas fa-calendar-check"></i>
+            Agendar Meu Horário
+          </a>
+          <a href="#servicos" class="btn-secondary">
+            <i class="fas fa-list"></i>
+            Ver Serviços
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">15+ Anos</div>
+            <div class="hero-stat-label">De Experiência</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">4.9 ★</div>
+            <div class="hero-stat-label">Avaliação Média</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <i class="fas fa-chevron-down"></i>
+      <span>Rolar</span>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-item"><i class="fas fa-award"></i> Barbeiros Certificados</div>
+      <div class="trust-item"><i class="fas fa-shield-alt"></i> Higiene Garantida</div>
+      <div class="trust-item"><i class="fas fa-clock"></i> Cortes agendados</div>
+      <div class="trust-item"><i class="fas fa-star"></i> 5 no Google</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-image-wrapper">
+        <img src="pordentro.jpg" alt="Interior da King's Cut Barbearia" class="about-image-main" />
+        <img src="corte1.jpg" alt="Corte premium" class="about-image-accent" />
+        <div class="about-badge">
+          <div class="about-badge-number">15+</div>
+          <div class="about-badge-text">Anos de<br>Excelência</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Nossa História</span>
+        <h2 class="section-title">Mais do que uma<br><span>Barbearia</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">
+          Cortando cabelo e barba desde a infância, aqui, cada corte é uma obra de arte e cada cliente é tratado com o respeito que merece.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--gray); line-height: 1.8; margin-top: 20px;">
+          Fundada em 2008, nossa barbearia usa técnicas tradicionais com as tendências mais modernas do mercado. Nossos barbeiros são treinados e certificados, garantindo sempre o melhor resultado para você.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <i class="fas fa-cut"></i>
+            <div>
+              <div class="about-feature-title">Técnica Apurada</div>
+              <div class="about-feature-text">Barbeiros com mais de 5 anos de experiência</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-spa"></i>
+            <div>
+              <div class="about-feature-title">Produtos Premium</div>
+              <div class="about-feature-text">Apenas marcas de alta qualidade</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-couch"></i>
+            <div>
+              <div class="about-feature-title">Ambiente Exclusivo</div>
+              <div class="about-feature-text">Espaço pensado para o seu conforto</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <i class="fas fa-calendar-alt"></i>
+            <div>
+              <div class="about-feature-title">Agendamento Fácil</div>
+              <div class="about-feature-text">Agende pelo WhatsApp em segundos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-tag">Nossos Serviços</span>
+        <h2 class="section-title">Escolha o Seu<br><span>Estilo</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">Do corte clássico ao mais moderno, temos tudo o que você precisa para sair impecável.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Corte -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-cut"></i></div>
+          <div class="service-name">Corte Masculino</div>
+          <p class="service-desc">Corte personalizado de acordo com o seu estilo, formato de rosto e preferências. Finalização incluída.</p>
+          <div class="service-price">
+            <span class="service-price-from">A partir de</span>
+            <span class="service-price-value">R$30</span>
+          </div>
+          <ul class="service-includes">
+            <li><i class="fas fa-check"></i> Corte personalizado</li>
+            <li><i class="fas fa-check"></i> Finalização profissional</li>
+          </ul>
+        </div>
+        <!-- Barba -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="service-name">Barba Completa</div>
+          <p class="service-desc">Modelagem, aparação e produtos para um resultado impecável.</p>
+          <div class="service-price">
+            <span class="service-price-from">A partir de</span>
+            <span class="service-price-value">R$30</span>
+          </div>
+          <ul class="service-includes">
+            <li><i class="fas fa-check"></i> Modelagem e aparação</li>
+            <li><i class="fas fa-check"></i> Hidratação com cremes</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-magic"></i></div>
+          <div class="service-name">Design de Sobrancelha</div>
+          <p class="service-desc">Modelagem da sobrancelha masculina e feminina.</p>
+          <div class="service-price">
+            <span class="service-price-from">A partir de</span>
+            <span class="service-price-value">R$10</span>
+          </div>
+          <ul class="service-includes">
+            <li><i class="fas fa-check"></i> Análise do formato do rosto</li>
+            <li><i class="fas fa-check"></i> Acabamento</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="gallery-header">
+        <span class="section-tag">Nosso Trabalho</span>
+        <h2 class="section-title">Resultados que<br><span>Falam por Si</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">Cada foto é a prova do nosso compromisso com o cuidado com cada cliente.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="barba1.png" alt="Corte e barba premium" />
+          <div class="gallery-overlay"><span class="gallery-overlay-text">Fade + Barba</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="corte1.jpg" alt="Corte masculino moderno" />
+          <div class="gallery-overlay"><span class="gallery-overlay-text">Corte Estilizado</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="corteinfantil.jpg" alt="Fade perfeito" />
+          <div class="gallery-overlay"><span class="gallery-overlay-text">Corte infantil</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="barbaperso.png" alt="Barba estilizada" />
+          <div class="gallery-overlay"><span class="gallery-overlay-text">Barba Personalizada</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="degradê.webp" alt="Estilo moderno" />
+          <div class="gallery-overlay"><span class="gallery-overlay-text">Degradê</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="process-header">
+        <span class="section-tag">Como Funciona</span>
+        <h2 class="section-title">Simples, Rápido<br><span>e Sem Complicação</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">Em apenas 4 passos você garante o seu horário e sai com o visual que sempre quis.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-title">Escolha o Serviço</div>
+          <p class="step-desc">Navegue pelo nosso menu de serviços e escolha o que melhor se encaixa no seu estilo e necessidade.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-title">Agende pelo WhatsApp</div>
+          <p class="step-desc">Entre em contato pelo WhatsApp e escolha o dia e horário mais conveniente para você.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-title">Apareça no horário</div>
+          <p class="step-desc">Chegue no horário marcado, sem filas. Nosso ambiente foi criado para o seu conforto total.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-title">Saia Impecável</div>
+          <p class="step-desc">Saia com um corte Top dos Top!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="testimonials-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que Nossos Clientes<br><span>Dizem</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle" style="margin: 0 auto;">Veja o que nossos clientes têm a dizer.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <i class="fas fa-check-circle testimonial-verified"></i>
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Bom profissional, meu filho de 1 aninho só corta com ele ,pois tem paciência é calma , é o corte fica maravilhoso, ambiente climatizado ,tudo limpo é organizado"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Brenda Ramalho</div>
+              <div class="testimonial-role">há 2 anos</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fas fa-check-circle testimonial-verified"></i>
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Excelente profissional, atencioso e educado .
+O local super organizado,higiênico e refrigerado ...parabéns!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">G</div>
+            <div>
+              <div class="testimonial-name">Força e Honra BRASIL</div>
+              <div class="testimonial-role">há 2 ano</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fas fa-check-circle testimonial-verified"></i>
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Ótimo atendimento, ambiente super confortável, recomendo."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">L</div>
+            <div>
+              <div class="testimonial-name">Davi silva</div>
+              <div class="testimonial-role">há 2 meses</div>
+            </div>
+          </div>
+        </div>
+       
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-left">
+        <span class="section-tag">Dúvidas Frequentes</span>
+        <h2 class="section-title">Tem Alguma<br><span>Dúvida?</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">Respondemos as perguntas mais comuns dos nossos clientes. Se ainda tiver dúvidas, fale conosco pelo WhatsApp.</p>
+        <a href="" class="btn-primary" style="margin-top: 32px;">
+          <i class="fab fa-whatsapp"></i>
+          Falar no WhatsApp
+        </a>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Preciso agendar com antecedência?
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sim, recomendamos o agendamento prévio pelo WhatsApp para garantir o seu horário sem espera. Trabalhamos com hora marcada para respeitar o seu tempo. Em alguns casos, aceitamos clientes sem agendamento, mas sujeito à disponibilidade.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Quanto tempo dura cada serviço?
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">O corte simples dura em média 30 a 40 minutos. A barba completa leva de 25 a 35 minutos. Esses tempos podem variar de acordo com o tipo de serviço solicitado.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Quais formas de pagamento são aceitas?
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Aceitamos dinheiro, cartão de débito, cartão de crédito e Pix.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Vocês atendem crianças?
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sim! Atendemos crianças. Nossos barbeiros especializados em cortes infantis e um ambiente acolhedor para os pequenos.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Qual é o horário de funcionamento?
+            <div class="faq-icon"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Funcionamos de segunda a sexta das 8h às 19h, sábados das 8h às 12h. Em feriados, o horário pode variar — consulte pelo WhatsApp para confirmar a disponibilidade.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location" id="localizacao">
+    <div class="container">
+      <div class="location-info">
+        <span class="section-tag">Onde Estamos</span>
+        <h2 class="section-title">Venha Nos<br><span>Visitar</span></h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">Estamos em uma localização de fácil acesso.</p>
+        <div class="location-details">
+          <div class="location-detail">
+            <div class="location-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="location-detail-title">Endereço</div>
+              <div class="location-detail-value">Rua do alecrim, 39 — Conceição<br>São Raimundo das Mangabeiras, MA — CEP 65840-000</div>
+            </div>
+          </div>
+          <div class="location-detail">
+            <div class="location-detail-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="location-detail-title">Horário de Funcionamento</div>
+              <div class="location-detail-value">Seg–Sex: 8h às 19h | Sáb: 8h às 12h</div>
+            </div>
+          </div>
+          <div class="location-detail">
+            <div class="location-detail-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="location-detail-title">Telefone / WhatsApp</div>
+              <div class="location-detail-value">(+55) 99 98470-0598</div>
+            </div>
+          </div>
+          <div class="location-detail">
+            <div class="location-detail-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="location-detail-title">E-mail</div>
+              <div class="location-detail-value">chicocabelosestilos@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="location-map">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Rua do alecrim, 39</p>
+          <p style="margin-top: 8px; font-size: 0.8rem; color: var(--gray);">Conceição — São Raimundo das Mangabeiras, MA</p>
+          <a href="https://maps.app.goo.gl/wUaN2jhKmVydbHhv9" target="_blank" class="btn-primary" style="margin-top: 24px; font-size: 0.85rem; padding: 14px 28px;">
+            <i class="fas fa-directions"></i>
+            Como Chegar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <span class="section-tag">Pronto para Transformar seu Visual?</span>
+      <h2 class="section-title">Agende Agora e<br><span>Saia Impecável</span></h2>
+      <div class="gold-line" style="margin: 20px auto 24px;"></div>
+      <div class="final-cta-actions">
+        <a href="https://wa.me/5511999990000?text=Olá!%20Quero%20agendar%20um%20horário%20na%20King's%20Cut!" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i>
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom: 16px;">
+            <div class="logo-icon"><i class="fas fa-cut"></i></div>
+            <span class="logo-text">Chico<span style="color: var(--gold);">Cabeleireiro</span></span>
+          </div>
+          <p class="footer-desc">A barbearia premium onde homens se tornam lendas. Qualidade, estilo e uma experiência única em cada visita.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/chico_cabelereiros2/" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Serviços</div>
+          <ul class="footer-links">
+            <li><a href="#servicos">Corte Masculino</a></li>
+            <li><a href="#servicos">Barba Completa</a></li>
+            <li><a href="#servicos">Design de Sobrancelha</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Links Rápidos</div>
+          <ul class="footer-links">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contato</div>
+          <ul class="footer-links" style="font-size: 0.8rem; color: var(--gray); line-height: 1.8;">
+            <li>(+55) 99 98470-0598</li>
+            <li>chicocabeloestilos@gmail.com</li>
+            <li>Rua do alecrim, 39</li>
+            <li>Conceição — São Raimundo das Mangabeiras, MA</li>
+          </ul>
+          <div style="margin-top: 20px;">
+            <div class="footer-col-title">Horários</div>
+            <p style="font-size: 0.8rem; color: var(--gray); line-height: 1.8;">
+              Seg–Sex: 9h às 19h<br>
+              Sábado: 8h às 12h<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Chico Cabeleireiro. Todos os direitos reservados.</p>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="" class="float-whatsapp" title="Falar no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // ===== NAVBAR SCROLL =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
+    // ===== MOBILE MENU =====
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburger.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    function closeMobile() { mobileMenu.classList.remove('open'); }
+
+    // ===== FAQ TOGGLE =====
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const allItems = document.querySelectorAll('.faq-item');
+      allItems.forEach(i => { if (i !== item) i.classList.remove('open'); });
+      item.classList.toggle('open');
+    }
+
+    // ===== SCROLL ANIMATIONS =====
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.service-card, .testimonial-card, .process-step, .gallery-item, .about-feature').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+
+    // ===== SMOOTH ACTIVE NAV =====
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.style.color = '';
+        if (link.getAttribute('href') === '#' + current) link.style.color = 'var(--gold)';
+      });
+    });
+  </script>
+</body>
+</html>
